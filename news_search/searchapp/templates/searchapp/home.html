@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <div id="hero">
+        <h1>Welcome to My News App</h1>
+        <h5>Explore the latest news from around the world.</h5>
+        <div id="linkdiv">
+            <a href="{% url 'search' %}" class="btn btn-primary">Search Now</a>
+        </div>
+    </div>
+    {% endblock %}

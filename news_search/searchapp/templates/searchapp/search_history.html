@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <div id="searchform">
+        <h1>Search History</h1>
+    </div>
+
+    <div class="search-results">
+        <ul class="searchlist">
+            {% for query in search_queries %}
+                <li id="listitem">
+                    {{ query.created_at }} - <a href="{% url 'search_results' query.id %}">{{ query.query }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    background-color: #fff;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 50px;
+}
+
+#right {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+#nav a{
+    text-decoration: none;
+    font-weight: 600;
+    color: green;
+}
+
+#hero{
+    width: 100%;
+    background-color: beige;
+    padding: 10vw 15vw;
+}
+
+#hero h1{
+    font-weight: 400;
+    font-size: 2.5vw;
+}
+
+#hero a{
+    padding: 1vw 2.3vw;
+    border-radius: 50px;
+    border: 1px solid gray;
+    background-color: white;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+#linkdiv{
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+}
+
+.herodiv{
+    width: 100%;
+    background-color: beige;
+    padding: 5vw 15vw;
+}
+
+.herodiv h1{
+    padding: 1vw;
+}
+
+.herodiv input{
+    width: 20vw;
+    border-radius: 5px;
+    height: 2vw;
+    margin: .5vw .5vw;
+}
+
+.formdiv{
+    padding: 1vw;
+}
+
+.formdiv button{
+    margin: 1vw;
+    padding: .3vw 1.3vw;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.formdiv label{
+    font-weight: 700;
+}
+
+#signupform ul{
+    background-color: rgb(232, 158, 158);
+    border-radius: 5px;
+    border: 1px solid red;
+    padding: 1vw;
+    margin: 1vw 1vw;
+}
+
+.formdiv li{
+    list-style: none;
+    padding-top: .5vw;
+}
+
+#searchform{
+    width: 100%;
+    background-color: beige;
+    padding: 1.5vw 5vw;
+}
+
+#searchform input{
+    margin: .3vw;
+    padding: .3vw 1.3vw;
+    border-radius: 10px;
+}
+
+.search-results{
+    padding: 2vw 1vw;
+}
+
+#searchform button{
+    margin: 1vw;
+    padding: .3vw 1.3vw;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.searchlist{
+    padding: 1vw;
+}
+
+#listitem{
+    border-radius: 5px;
+    box-shadow: inset;
+    padding: 1vw;
+    list-style: none;
+}

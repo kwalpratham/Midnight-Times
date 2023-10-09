@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div>
+        <div id="searchform">
+            <h1>Search for News</h1>
+            <form method="post">
+                {% csrf_token %}
+                <input type="text" name="query" placeholder="Enter a keyword">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <!-- \Refresh button -->
+        {% comment %} <form method="post" action="{% url 'search_refresh' %}">
+            {% csrf_token %}
+            <input type="hidden" name="query" value="{{ form.cleaned_data.query }}">
+            <button type="submit">Refresh</button>
+        </form> {% endcomment %}
+    <div class="search-results">
+        {% if search_results %}
+            <h2>Search Results</h2>
+            <ul class="searchlist">
+                {% for result in search_results %}
+                    <li id="listitem">
+                        <a href="{{ result.source_url }}" target="_blank">{{ result.title }}</a>
+                        <p>{{ result.description }}</p>
+                        <p>Published on: {{ result.publishedAt }}</p>
+                        <p>Source: {{ result.source_name }}</p>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+    </div>
+{% endblock %}
