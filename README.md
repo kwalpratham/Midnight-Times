@@ -22,6 +22,14 @@ The application uses News API to fetch data and display it in an easy-to-read fo
         python manage.py runserver
         """
 
+
+## Tech stack
+Backend - Django
+Frontend - Html, Css
+Database - SQLite
+APIs used - News Api
+
+
 This project took 1 day (is still in development phase).
 
 This project is fun got to know the power of django with the help of many built-in functionalities and powerfull framework.
