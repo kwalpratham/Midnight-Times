@@ -3,8 +3,8 @@ from django.contrib.auth.models import User
 
 class SearchQuery(models.Model):
     query = models.CharField(max_length=255)
-    created_at = models.DateTimeField(auto_now_add=True)
-    # last_search_timestamp = models.DateTimeField(null=True, blank=True)
+    # created_at = models.DateTimeField(auto_now_add=True)
+    last_search_timestamp = models.DateTimeField(null=True, blank=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
